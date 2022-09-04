@@ -36,10 +36,9 @@ This may be handy to quickly get some simple filters in but also complex pipelin
 
 %prep
 %autosetup -n %{name}-%{version} -p1
-%meson
 
-%build \
-        --buildtype=release
+%build
+%meson
 
 %meson_build
 

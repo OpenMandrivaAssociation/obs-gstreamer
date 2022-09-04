@@ -9,6 +9,7 @@ Source0:	https://github.com/fzwoch/obs-gstreamer/archive/refs/tags/v%{version}/%
 
 BuildRequires:	meson
 BuildRequires:  pkgconfig(libobs)
+BuildRequires:  pkgconfig(gstreamer-1.0)
 
 Requires: obs-studio
 Requires: vulkan-loader

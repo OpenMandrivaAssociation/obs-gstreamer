@@ -38,6 +38,8 @@ This may be handy to quickly get some simple filters in but also complex pipelin
 %autosetup -n %{name}-%{version} -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %meson
 
 %meson_build

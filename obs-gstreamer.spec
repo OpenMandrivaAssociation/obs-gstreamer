@@ -1,5 +1,5 @@
 Name:		obs-gstreamer
-Version:	0.3.5
+Version:	0.4.0
 Release:	1
 License:	GPLv2.0
 Group:		Video

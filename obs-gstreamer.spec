@@ -7,6 +7,10 @@ Summary:	GStreamer OBS Studio plugin
 Url:		https://github.com/fzwoch/obs-gstreamer/
 Source0:	https://github.com/fzwoch/obs-gstreamer/archive/refs/tags/v%{version}/%{name}-%{version}.tar.gz
 
+# This patch revert commit https://github.com/fzwoch/obs-gstreamer/commit/4ca74407b0e056df5d8d57526bf41dfcb100f333
+# Reverted due installation plugins just inside /usr/lib64/ and not to /usr/lib64/obs-plugins/ and that cause issues with detecting it by obs.
+Patch0:   revert-install-dir-changes.patch
+
 BuildRequires:	meson
 BuildRequires:  pkgconfig(libobs)
 BuildRequires:  pkgconfig(gstreamer-1.0)
@@ -38,7 +42,7 @@ This may be handy to quickly get some simple filters in but also complex pipelin
 %autosetup -n %{name}-%{version} -p1
 
 %build
-%meson --prefix=/usr/lib64/obs-plugins/
+%meson
 
 %meson_build
 
@@ -46,4 +50,4 @@ This may be handy to quickly get some simple filters in but also complex pipelin
 %meson_install
 
 %files
-%{_libdir}/obs-gstreamer.so
+%{_libdir}/obs-plugins/obs-gstreamer.so

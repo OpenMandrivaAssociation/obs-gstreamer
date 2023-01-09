@@ -38,7 +38,7 @@ This may be handy to quickly get some simple filters in but also complex pipelin
 %autosetup -n %{name}-%{version} -p1
 
 %build
-%meson
+%meson --prefix=/usr
 
 %meson_build
 

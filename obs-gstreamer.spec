@@ -50,4 +50,4 @@ This may be handy to quickly get some simple filters in but also complex pipelin
 %meson_install
 
 %files
-%{_libdir}/obs-plugins/obs-gstreamer.so
+#{_libdir}/obs-plugins/obs-gstreamer.so

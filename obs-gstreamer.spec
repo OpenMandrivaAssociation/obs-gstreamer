@@ -9,7 +9,7 @@ Source0:	https://github.com/fzwoch/obs-gstreamer/archive/refs/tags/v%{version}/%
 
 # This patch revert commit https://github.com/fzwoch/obs-gstreamer/commit/4ca74407b0e056df5d8d57526bf41dfcb100f333
 # Reverted due installation plugins just inside /usr/lib64/ and not to /usr/lib64/obs-plugins/ and that cause issues with detecting it by obs.
-Patch0:   revert-install-dir-changes.patch
+#Patch0:   revert-install-dir-changes.patch
 
 BuildRequires:	meson
 BuildRequires:  pkgconfig(libobs)

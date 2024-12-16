@@ -1,6 +1,6 @@
 Name:		obs-gstreamer
-Version:	0.4.1
-Release:	1
+Version:	0.4.0
+Release:	2
 License:	GPLv2.0
 Group:		Video
 Summary:	GStreamer OBS Studio plugin

@@ -15,6 +15,7 @@ BuildRequires:	meson
 BuildRequires:  pkgconfig(libobs)
 BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(gstreamer-video-1.0)
+BuildRequires:  pkgconfig(simde)
 
 Requires: obs-studio
 Requires: vulkan-loader

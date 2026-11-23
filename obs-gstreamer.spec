@@ -1,6 +1,6 @@
 Name:		obs-gstreamer
 Version:	0.4.1
-Release:	1
+Release:	2
 License:	GPLv2.0
 Group:		Video
 Summary:	GStreamer OBS Studio plugin
@@ -18,7 +18,6 @@ BuildRequires:  pkgconfig(gstreamer-video-1.0)
 
 Requires: obs-studio
 Requires: vulkan-loader
-Requires: gstreamer1.0-vaapi
 Requires: gstreamer1.0-plugins-base
 Requires: gstreamer1.0-plugins-good
 Requires: gstreamer1.0-plugins-bad
